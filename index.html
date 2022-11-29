@@ -1,0 +1,560 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts (Source Serif Pro) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Source Serif Pro', serif;
+        }
+    </style>
+
+    <title>Scribdy</title>
+</head>
+<body>
+
+    <!-- Start Navbar -->
+
+    <nav class="navbar fixed-top py-4">
+      <div class="container-fluid mx-xl-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <button class="btn border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <h4 class="m-0">
+              <a href="#" class="link-dark text-decoration-none">
+                  SCRIBD
+                  <!-- <img src="./assets/logo.svg" class="img-fluid" alt=""> -->
+              </a>
+          </h4>
+        </div>
+        <div>
+            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#ModalForm">Sign in</button>
+        </div>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header my-4">
+            <h5 class="offcanvas-title fw-bold" id="offcanvasWithBothOptionsLabel">Scribd</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+                <form>
+                    <input type="text" class="form-control" placeholder="Search">
+                </form> <hr class="my-4 text-secondary">
+            </div>
+            <div>
+            <div class="mb-3">
+              <a href="#" class="link-info text-decoration-none pr-3">
+                Explore
+              </a>
+              <a href="#" class="link-info text-decoration-none px-3">
+                Upload
+              </a>
+              <a href="#" class="link-info text-decoration-none pr-3">
+                FAQ
+              </a>
+            </div>
+            <p class="fw-bold">Browse by</p>
+            <div class="d-flex justify-content-between">
+                <ul class="browse-list">
+                    <li>
+                      <a href="#">Books</a>
+                    </li>
+                    <li>
+                      <a href="#">Magazines</a>
+                    </li>
+                    <li>
+                      <a href="#">Documents</a>
+                    </li>
+                </ul>
+                <ul class="browse-list-left">
+                    <li>
+                      <a href="#">Audio Books</a>
+                    </li>
+                    <li>
+                    <a href="#">Podcasts</a>
+                    </li>
+                    <li>
+                      <a href="#">Sheet Music</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <p class="fw-bold">Interests</p>
+            <div class="interests">
+              <a href="#">Career & Growth</a>
+              <a href="#">Business</a>
+              <a href="#">Finance & Money Management</a>
+              <a href="#">Politics</a>
+              <a href="#">Sports & Recreation</a>
+              <a href="#">Games & Activities</a>
+              <a href="#">Comics & Graphic Novels</a>
+              <a href="#">Social Science</a>
+              <a href="#">True Crime</a>
+              <a href="#">Travel</a>
+            </div>
+            <hr class="text-secondary my-3">
+            <div class="downloads">
+              <p>Download our app to read books on any device</p>
+              <div>
+                <img src="assets/img/play-store.svg" alt="">
+                <img src="assets/img/app-store.svg" alt="">
+                <img src="assets/img/download.svg" alt="">
+              </div>
+              <hr class="text-secondary">
+            </div>
+            <div class="icons">
+              <div class="d-flex justify-content-around">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="fa-brands fa-scribd"></i>
+                <i class=""></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End Navbar -->
+
+    <section id="header">
+      <div class="container-xl">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-10 col-sm-8 col-md-6 col-lg-6 text-center">
+            <h1 class="fw-bold">Endless entertainment and knowledge</h1>
+            <p class="lead">Read or listen anytime, anywhere.</p>
+            <div class="d-grid gap-2 mt-5 mb-3">
+              <button class="btn btn-info fw-bold">Read Free For 30 Days</button>
+            </div>
+            <p>Only $9.99/month after. <b>Cancel anytime.</b> </p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="hero-banner">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Start -->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="myform">
+              <h1 class="text-center">Login Form</h1>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+                <p class="mt-3">Not a member? <a href="#" data-bs-toggle="modal" data-bs-target="#ModalFormUp">Signup now</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="ModalFormUp" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <h1 class="text-center">Signup Form</h1>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputUsername" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="UsernameHelp">
+                </div>  
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign up</button>
+                <p class="mt-3">Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#ModalForm">Sign in here</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- 
+   <p>Not a member? <a href="#" data-bs-toggle="modal" data-bs-target="#ModalFormUp">Signup now</a></p>
+ -->
+    <!-- Modal End -->
+
+    <!-- Start Subscription -->
+    <section id="subscription">
+      <div class="container text-center">
+        <h1 class="fw-bold">All in one simple subscription</h1>
+        <div class="row justify-content-center my-5">
+          <div class="col-12">
+              <ul class="subscription-icons">
+                <li class="subscription-icon">
+                  <h3><i class="bi bi-book"></i></h3>
+                  <p>Books</p>
+                </li>
+                <li class="subscription-icon">
+                  <h3><i class="bi bi-headphones"></i></h3>
+                  <p>Audio</p>
+                </li>
+                <li class="subscription-icon">
+                  <h3><i class="bi bi-journals"></i></h3>
+                  <p>Magazines</p>
+                </li>
+                <li class="subscription-icon">
+                  <h3><i class="bi bi-mic"></i></h3>
+                  <p>Podcasts</p>
+                </li>
+                <li class="subscription-icon">
+                  <h3><i class="bi bi-music-note-beamed"></i></h3>
+                  <p>Sheet Music</p>
+                </li>
+                <li class="subscription-icon">
+                  <h3><i class="bi bi-file-earmark-text"></i></h3>
+                  <p>Documents</p>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Subscription -->
+
+    <!-- Start In the news -->
+
+    <section id="news">
+      <div class="container-fluid">
+        <div>
+          <h1 class="text-center fw-bold mb-3">In the news</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div class="row justify-content-center">
+                  <div class="col-10 col-sm-7 col-md-6">
+                    <div class="card mx-auto my-2">
+                      <div class="card-body">
+                        <h2 class="card-title">Business Insider</h2>
+                        <hr>
+                        <h5 class="card-text">“Scribd is overall the best and most convenient deal for online reading.”</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="row justify-content-center">
+                  <div class="col-10 col-sm-7 col-md-6">
+                    <div class="card mx-auto my-2">
+                      <div class="card-body">
+                        <h2 class="card-title">Forbes</h2>
+                        <hr>
+                        <h5 class="card-text">“Scribd is the Netflix for Books”</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-10 col-sm-7 col-md-6">
+                    <div class="card mx-auto my-2">
+                      <div class="card-body">
+                        <h2 class="card-title">Interpreneur</h2>
+                        <hr>
+                        <h5 class="card-text">“Put an entire library in your pocket with a subscription to Scribd.”</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End In the news -->
+
+    <!-- Start Book Collection -->
+    
+    <section id="collections">
+      <div class="container-fluid">
+        <h1 class="text-center fw-bold">The best books and audiobooks are waiting for you</h1>
+
+        <ul class="book-collections">
+          <li>
+            <a href="https://www.scribd.com/audiobook/515124006/Fellowship-of-the-Ring-The-The-Lord-of-the-Rings-Book-1">
+              <img src="https://imgv2-2-f.scribdassets.com/img/audiobook_square_badge/515124006/288x288/bb61eda6bf/1669552601?v=1" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.scribd.com/audiobook/515124006/Fellowship-of-the-Ring-The-The-Lord-of-the-Rings-Book-1">
+              <img src="https://imgv2-2-f.scribdassets.com/img/audiobook_square_badge/548877279/288x288/540a2ad389/1668205726?v=1" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.scribd.com/audiobook/515124006/Fellowship-of-the-Ring-The-The-Lord-of-the-Rings-Book-1">
+              <img src="https://imgv2-2-f.scribdassets.com/img/audiobook_square_badge/482398441/288x288/17afb12fcf/1667697784?v=1" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.scribd.com/audiobook/515124006/Fellowship-of-the-Ring-The-The-Lord-of-the-Rings-Book-1">
+              <img src="https://imgv2-1-f.scribdassets.com/img/audiobook_square_badge/514745695/288x288/8d5af99885/1668109810?v=1" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.scribd.com/audiobook/515124006/Fellowship-of-the-Ring-The-The-Lord-of-the-Rings-Book-1">
+              <img src="https://imgv2-1-f.scribdassets.com/img/audiobook_square_badge/289188129/288x288/b3032ef7e5/1669430099?v=1" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.scribd.com/audiobook/515124006/Fellowship-of-the-Ring-The-The-Lord-of-the-Rings-Book-1">
+              <img src="https://imgv2-2-f.scribdassets.com/img/audiobook_square_badge/486619648/288x288/51adc54629/1664900247?v=1" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.scribd.com/audiobook/515124006/Fellowship-of-the-Ring-The-The-Lord-of-the-Rings-Book-1">
+              <img src="https://imgv2-1-f.scribdassets.com/img/word_document/485165118/216x288/c0a183a3fb/1668576225?v=1" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.scribd.com/audiobook/515124006/Fellowship-of-the-Ring-The-The-Lord-of-the-Rings-Book-1">
+              <img src="https://imgv2-1-f.scribdassets.com/img/word_document/445929040/216x288/ce7917f569/1667426648?v=1" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.scribd.com/audiobook/515124006/Fellowship-of-the-Ring-The-The-Lord-of-the-Rings-Book-1">
+              <img src="https://imgv2-1-f.scribdassets.com/img/word_document/250344853/216x288/aa92d33c33/1664259719?v=1" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.scribd.com/audiobook/515124006/Fellowship-of-the-Ring-The-The-Lord-of-the-Rings-Book-1">
+              <img src="https://imgv2-2-f.scribdassets.com/img/word_document/234818013/216x288/e337d71aaa/1669252835?v=1" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.scribd.com/audiobook/515124006/Fellowship-of-the-Ring-The-The-Lord-of-the-Rings-Book-1">
+              <img src="https://imgv2-2-f.scribdassets.com/img/word_document/446012555/216x288/a37601ab2e/1669254845?v=1" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.scribd.com/audiobook/515124006/Fellowship-of-the-Ring-The-The-Lord-of-the-Rings-Book-1">
+              <img src="https://imgv2-1-f.scribdassets.com/img/word_document/523679233/216x288/53d271d471/1668577313?v=1" alt="">
+            </a>
+          </li>
+        </ul>
+        
+        <div class="mt-5 text-center">
+          <div class="d-grid d-md-block gap-2">
+            <button class="btn btn-info">Read for 30 days</button>
+          </div>
+          <p class="my-3">Cancel anytime.</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- End Book Collection -->
+   
+    <!-- Footer -->
+
+    <footer id="footer">
+      <div class="container-fluid my-4 mb-5">
+        <div class="row mx-2 mx-xl-5">
+          <div class="col-6 col-sm-3 col-md-2 col-lg-2">
+            <div class="footer-content">
+              <h5>About</h5>
+              <ul>
+                <li>
+                  <a href="#">About Scribd</a>
+                </li>
+                <li>
+                  <a href="#">Press</a>
+                </li>
+                <li>
+                  <a href="#">Our Blog</a>
+                </li>
+                <li>
+                  <a href="#">Join Our Team!</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+                <li>
+                  <a href="#">Invite friends</a>
+                </li>
+                <li>
+                  <a href="#">Gifts</a>
+                </li>
+                <li>
+                  <a href="#">Scribd for enterprise</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 col-lg-2">
+            <div class="footer-content">
+              <h5>Support</h5>
+              <ul>
+                <li>
+                  <a href="#">Help / FAQ</a>
+                </li>
+                <li>
+                  <a href="#">Accessibility</a>
+                </li>
+                <li>
+                  <a href="#">Purchase / help</a>
+                </li>
+                <li>
+                  <a href="#">AdChoices</a>
+                </li>
+                <li>
+                  <a href="#">Publishers</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 col-lg-2">
+            <div class="footer-content">
+              <h5>Legal</h5>
+              <ul>
+                <li>
+                  <a href="#">Terms</a>
+                </li>
+                <li>
+                  <a href="#">Privacy</a>
+                </li>
+                <li>
+                  <a href="#">Copyright</a>
+                </li>
+                <li>
+                  <a href="#">Cookie Preferences</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 col-lg-2">
+            <div class="footer-content">
+              <h5>Social</h5>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-instagram"></i> Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-twitter"></i> Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-facebook"></i> Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-pinterest"></i> Pinterest
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 store">
+            <div class="footer-content">
+              <h5 class="text-md-end">Get our free apps</h5>
+              <div class="downloads d-flex flex-column align-items-md-end">
+                <img src="assets/img/app-store.svg" alt="">
+                <img src="assets/img/play-store.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="row justify-content-between mx-2 mx-xl-5 copyright">
+          <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+            <a href="#">Books</a>
+            <a href="#">Audiobooks</a>
+            <a href="#">Magazines</a>
+            <a href="#">Podcasts</a>
+            <a href="#">Sheet Music</a>
+            <a href="#">Documents</a>
+            <a href="#">Snapshots</a>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-5 mt-4 mt-lg-0">
+            <div class="d-block d-lg-flex align-items-center justify-content-lg-end">
+              <div class="dropup-center dropup">
+                Languages:
+                <button class="border-0 dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Franch</a></li>
+                  <li><a class="dropdown-item" href="#">German</a></li>
+                  <li><a class="dropdown-item" href="#">Chinese</a></li>
+                  <li><a class="dropdown-item" href="#">Urdu</a></li>
+                </ul>
+              </div>
+              <p class="text-secondary mt-3 mt-lg-0 pr-3 mb-0">Copyright © 2022 Scribd Inc.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

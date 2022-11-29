@@ -1,0 +1,16 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Bootstrap Custom Theme Colors
+
+$custom-theme-colors: (
+  "info-var": #30a296;
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+
+//$info-var: #30a296;
+
+
+
