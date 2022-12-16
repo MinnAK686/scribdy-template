@@ -1,0 +1,75 @@
+@use "bs" as *;
+
+.mobileBtnTabs {
+    nav {
+        background-color: #fff;
+        border-top: 1px solid #e9edf8;
+        bottom: 0;
+        display: flex;
+        height: 60px;
+        left: 0;
+        padding-bottom: env(safe-area-inset-bottom,12px);
+        position: fixed;
+        width: 100%;
+        z-index: 29;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+
+            li {
+                flex-basis: 0;
+                flex-grow: 1;
+                padding: 2px 1px;
+                position: relative;
+                max-width: 25%;
+                line-height: inherit;
+                &.active-tab {
+                    &::after {
+                        content: " ";
+                        background: #a9085e;
+                        bottom: 0;
+                        height: 2px;
+                        left: 0;
+                        position: absolute;
+                        width: 100%;
+                    }
+                    a {
+                        color: #a9085e;
+                    }
+                }
+                a {
+                    align-items: center;
+                    // color: #a9085e;
+                    color: #00293f;
+                    text-decoration: none;
+                    font-size: 12px;
+                    height: 100%;
+                    justify-content: center;
+                    position: relative;
+                    text-align: center;
+                    top: -8px;
+
+                    span {
+                        display: block !important;
+                        font-size: 24px;
+                        padding-top: 1rem;
+                    }
+                    .tabName {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        padding: 0 6px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+}

@@ -1,0 +1,646 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Google Fonts (Source Serif Pro) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="assets/css/global.css" />
+        <link rel="stylesheet" href="assets/font/bootstrap-icons.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            body {
+                font-family: "Source Serif Pro", serif;
+            }
+        </style>
+
+        <title>Scribdy</title>
+    </head>
+    <body>
+        <div class="home">
+            <header>
+                <div class="fixed-top topbar-controller">
+                    <div class="container-lg">
+                        <div class="topbar-container">
+                            <div class="logo">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-block">
+                                        <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                            <i class="bi bi-list fs-2"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <img src="./assets/logo.svg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="wrapper__search_input_container search_input_container logged_in"
+                                role="search"
+                            >
+                                <form class="search_form">
+                                    <div class="input_wrapper">
+                                        <button
+                                            type="button"
+                                            class="close_related_search_button"
+                                        >
+                                            <span
+                                                class="SvgIcon-module_wrapper__1fPqw icon"
+                                                ><svg
+                                                    width="16"
+                                                    height="16"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    role="img"
+                                                    aria-hidden="true"
+                                                    class="SvgIcon-module_icon__sUHUn"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M4.414 7l3.293-3.293-1.414-1.414-5 5L.586 8l.707.707 5 5 1.414-1.414L4.414 9H15V7H4.414z"
+                                                        fill="currentColor"
+                                                    ></path></svg
+                                                ><span
+                                                    style="
+                                                        border: 0;
+                                                        clip: rect(0 0 0 0);
+                                                        height: 1px;
+                                                        margin: -1px;
+                                                        overflow: hidden;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        width: 1px;
+                                                        white-space: nowrap;
+                                                        word-wrap: normal;
+                                                    "
+                                                    >Close suggestions</span
+                                                ></span
+                                            ></button
+                                        ><label
+                                            ><span class="visually_hidden"
+                                                >Search</span
+                                            ><input
+                                                type="search"
+                                                autocapitalize="off"
+                                                autocomplete="off"
+                                                autocorrect="off"
+                                                class="search_input"
+                                                data-e2e="megamenu-top-bar-search-input"
+                                                id="header_search_input"
+                                                name="query"
+                                                placeholder="Search"
+                                                value="" /></label
+                                        ><button
+                                            aria-disabled="false"
+                                            class="TextButton-module_wrapper__ZwW-w TextButton-module_default__ekglb search_button no_spinner"
+                                            data-e2e="megamenu-top-bar-search-button"
+                                            type="submit"
+                                        >
+                                            <span
+                                                class="TextButton-module_content__6x-Ra"
+                                                ><span
+                                                    class="TextButton-module_children__HwxUl"
+                                                    ><span
+                                                        class="SvgIcon-module_wrapper__1fPqw icon"
+                                                        ><svg
+                                                            width="24"
+                                                            height="24"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            role="img"
+                                                            aria-hidden="true"
+                                                            class="SvgIcon-module_icon__sUHUn"
+                                                        >
+                                                            <path
+                                                                d="M20.71 20.29l-4.4-4.4A7.874 7.874 0 0018 11c0-4.41-3.59-8-8-8s-8 3.59-8 8 3.59 8 8 8c1.85 0 3.54-.63 4.9-1.69l4.4 4.4 1.41-1.42zM10 17c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"
+                                                                fill="currentColor"
+                                                            ></path></svg></span
+                                                    ><span
+                                                        class="visually_hidden"
+                                                        >Search</span
+                                                    ></span
+                                                ></span
+                                            >
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="user">
+                                <div class="d-none d-lg-block">
+                                    <div class="d-flex align-items-center">
+                                        <div
+                                            class="dropdown"
+                                            style="margin-right: 1rem"
+                                        >
+                                            <p
+                                                class="dropdown-toggle m-0 text-muted"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                EN
+                                            </p>
+                                            <ul
+                                                class="dropdown-menu text-center"
+                                            >
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        ><i
+                                                            class="bi bi-globe"
+                                                        ></i
+                                                    ></a>
+                                                    <hr />
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >EN</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >UK</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Espanol</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Arbic</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Ducth</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a
+                                            href="#"
+                                            class="text-secondary text-decoration-none fw-bold"
+                                        >
+                                            <i class="bi bi-upload px-2"></i>
+                                            <span>Upload</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-none d-sm-block">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <button class="btn-cus">
+                                                Read free for 30 days
+                                            </button>
+                                        </div>
+                                        <div class="profile">
+                                            <span class="user-profile" onclick="showProfileInfo()">
+                                                <img
+                                                    src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"
+                                                    alt=""
+                                                />
+                                            </>
+                                            <div>
+                                                <div class="profile-info-container">
+                                                    <div>
+                                                        <h4>Hi User!</h4>
+                                                        <ul class="profile-save">
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="bi bi-bookmark"></i>
+                                                                    Saved
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="bi bi-upload"></i>
+                                                                    Uploads
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Language(EN)</a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#" >Scribe Perks</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Read for free</a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="user-account">
+                                                            <li>
+                                                                <a href="#">Your Account</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Public profile</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Document uploads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">FAQ and support</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Sign out</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offcanvas offcanvas-start for-mobile" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <a href="#" class="offcanvas-title">
+                                        <img src="./assets/logo.svg" style="width:5.5rem;height:auto" alt="">
+                                    </a>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="d-sm-none">
+                                        <div class="greeting">
+                                            <a href="#" class="text-decoration-none text-secondary toggleOffcanvas" onclick="showMobileProfileInfo()">
+                                                <span class="profile-picture">
+                                                    <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="">
+                                                </span>
+                                                <span class="user-name">
+                                                    Hi User!
+                                                </span>
+                                            </a>
+                                            <div class="back-user">
+                                                <div>
+                                                    <span onclick="backOffcanvas()" class="cp">
+                                                        <i class="bi bi-arrow-left-short"></i> Back
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="mobile-profile-info-container">
+                                                <div>
+                                                    <h4>Hi User!</h4>
+                                                    <ul class="profile-save">
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-bookmark"></i>
+                                                                Saved
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="bi bi-upload"></i>
+                                                                Uploads
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Language(EN)</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" >Scribe Perks</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Read for free</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="user-account">
+                                                        <li>
+                                                            <a href="#">Your Account</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Public profile</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Document uploads</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">FAQ and support</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Sign out</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="offcanvas-toggler">
+                                        <div class="saved-books">
+                                            <div>
+                                                <a href="#" class="">
+                                                    <i class="bi bi-bookmark" style="margin-right:.5rem;"></i> Saved
+                                                </a><hr style="width: 50px">
+                                            </div>
+                                            <div class="my-4">
+                                                <a href="#" class="">
+                                                    What is Scribd?
+                                                </a><hr style="width: 50px">
+                                            </div>
+                                        </div>
+                                        <div class="books-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Ebooks</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Audiobooks</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Megazines</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Podcasts</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Sheet Music</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Documents</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Snapshots</a>
+                                                </li>
+                                            </ul><hr style="width:50px;">
+                                        </div>
+                                        <div class="d-sm-none my-4">
+                                            <div class="">
+                                                <div>
+                                                    <button class="btn-cus">
+                                                        Read free for 30 days
+                                                    </button> <hr style="width:50px;margin: 1rem 0;">
+                                                </div>
+                                                <div>
+                                                    <p>Get our free apps</p>
+                                                    <div class="d-flex justify-content-between">
+                                                        <img src="./assets/img/app-store.svg" style="width: 48%;" alt="">
+                                                        <img src="./assets/img/play-store.svg" style="width: 48%;" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </header>
+
+            <div class="header-banner">
+                <div class="left-banner"></div>
+                <div class="text-banner">
+                    <h3>Read anywhere. Anytime.</h3>
+                    <p>Discover the best reads on various topics of interest.Cancel anytime.</p>
+                    <button class="btn btn-info">Start your free 30 days</button>
+                </div>
+                <div class="right-banner"></div>
+            </div>
+            
+            <main class="main">
+                <section id="best-selling">
+                    <div class="sect-container">
+
+                    </div>
+                </section>
+                <section id="saved-books"></section>
+                <section id="psychology">
+                </section>
+                <section id="self-improvement">
+                </section>
+                <section id="personal-growth">
+                </section>
+            </main>
+
+        </div>
+
+        <footer id="footer">
+            <div class="container-fluid my-4 mb-5">
+                <div class="row mx-2 mx-xl-5">
+                <div class="col-6 col-sm-3 col-md-2 col-lg-2">
+                    <div class="footer-content">
+                    <h5>About</h5>
+                    <ul>
+                        <li>
+                        <a href="#">About Scribd</a>
+                        </li>
+                        <li>
+                        <a href="#">Press</a>
+                        </li>
+                        <li>
+                        <a href="#">Our Blog</a>
+                        </li>
+                        <li>
+                        <a href="#">Join Our Team!</a>
+                        </li>
+                        <li>
+                        <a href="#">Contact us</a>
+                        </li>
+                        <li>
+                        <a href="#">Invite friends</a>
+                        </li>
+                        <li>
+                        <a href="#">Gifts</a>
+                        </li>
+                        <li>
+                        <a href="#">Scribd for enterprise</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-2 col-lg-2">
+                    <div class="footer-content">
+                    <h5>Support</h5>
+                    <ul>
+                        <li>
+                        <a href="#">Help / FAQ</a>
+                        </li>
+                        <li>
+                        <a href="#">Accessibility</a>
+                        </li>
+                        <li>
+                        <a href="#">Purchase / help</a>
+                        </li>
+                        <li>
+                        <a href="#">AdChoices</a>
+                        </li>
+                        <li>
+                        <a href="#">Publishers</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-2 col-lg-2">
+                    <div class="footer-content">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li>
+                        <a href="#">Terms</a>
+                        </li>
+                        <li>
+                        <a href="#">Privacy</a>
+                        </li>
+                        <li>
+                        <a href="#">Copyright</a>
+                        </li>
+                        <li>
+                        <a href="#">Cookie Preferences</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-2 col-lg-2">
+                    <div class="footer-content">
+                    <h5>Social</h5>
+                    <ul>
+                        <li>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i> Twitter
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#">
+                            <i class="bi bi-pinterest"></i> Pinterest
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4 store">
+                    <div class="footer-content">
+                    <h5 class="text-md-end">Get our free apps</h5>
+                    <div class="downloads d-flex flex-column align-items-md-end">
+                        <img src="assets/img/app-store.svg" alt="">
+                        <img src="assets/img/play-store.svg" alt="">
+                    </div>
+                    </div>
+                </div>
+                <hr>
+                </div>
+                <div class="row justify-content-between mx-2 mx-xl-5 copyright">
+                <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                    <a href="#">Books</a>
+                    <a href="#">Audiobooks</a>
+                    <a href="#">Magazines</a>
+                    <a href="#">Podcasts</a>
+                    <a href="#">Sheet Music</a>
+                    <a href="#">Documents</a>
+                    <a href="#">Snapshots</a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-5 mt-4 mt-lg-0">
+                    <div class="d-block d-lg-flex align-items-center justify-content-lg-end">
+                    <div class="dropup-center dropup">
+                        Languages:
+                        <button class="border-0 dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Franch</a></li>
+                        <li><a class="dropdown-item" href="#">German</a></li>
+                        <li><a class="dropdown-item" href="#">Chinese</a></li>
+                        <li><a class="dropdown-item" href="#">Urdu</a></li>
+                        </ul>
+                    </div>
+                    <p class="text-secondary mt-3 mt-lg-0 pr-3 mb-0">Copyright © 2022 Scribd Inc.</p>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- Mobile Button Tabs -->
+        <div class="mobileBtnTabs d-sm-none">
+            <nav>
+                <ul>
+                    <li class="active-tab">
+                        <a href="#">
+                            <span>
+                                <svg width="20" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="SvgIcon-module_icon__sUHUn"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.393 13.389c-1.33 0-2.4-.491-3.22-1.46-.82-.97-1.257-2.347-1.257-4.076 0-.09 0-.174-.006-.258v-.06C.91 3.118 4.423.036 9.444.036c3.256 0 6.141.994 8.57 2.95l.797.647-2.215 3.322-1.903-1.257 1.012-1.61c-1.82-1.209-3.927-1.825-6.267-1.825-1.215 0-2.298.227-3.208.64-.329.168-.64.36-.933.575C4.26 4.232 3.74 5.123 3.74 6.165c0 .622.257.933.766.933.113 0 .34-.047.688-.131.281-.066.569-.102.862-.114.706 0 1.364.275 1.987.826.622.55.934 1.31.934 2.274a3.385 3.385 0 01-.958 2.424c-.64.677-1.514 1.012-2.627 1.012zm6.176.712a3.368 3.368 0 01.958-2.406c.64-.67 1.514-1.005 2.627-1.011 1.323 0 2.394.484 3.214 1.448.82.963 1.227 2.304 1.227 4.028 0 2.37-.748 4.231-2.25 5.578-1.46 1.317-3.543 2.089-5.626 2.184-.383.036-.778.054-1.18.054-3.62 0-7.074-1.299-9.72-3.657l-.783-.7 2.61-3.16 1.789 1.383-1.239 1.514a12.233 12.233 0 007.338 2.406c3.154 0 5.338-1.191 6.188-3.262.048-.215.072-.431.072-.646 0-.617-.257-.922-.766-.922-.114 0-.341.048-.688.132a4.15 4.15 0 01-.862.113c-.7 0-1.359-.269-1.981-.82-.617-.544-.928-1.298-.928-2.256z" fill="currentColor"></path></svg>
+                            </span>
+                            <div class="tabName">
+                                Home
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="SvgIcon-module_icon__sUHUn"><path d="M15 0c-1.64 0-3.09.81-4 2.03C10.09.81 8.64 0 7 0H0v19h7c1.65 0 3 1.35 3 3h2c0-1.65 1.35-3 3-3h7V0h-7zM7 17H2V2h5c1.65 0 3 1.35 3 3v13.03A4.924 4.924 0 007 17zm13 0h-5c-1.13 0-2.16.39-3 1.03V5c0-1.65 1.35-3 3-3h5v15z" fill="currentColor"></path></svg>
+                            </span>
+                            <div class="tabName">
+                                Books
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <svg width="22" height="21" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="SvgIcon-module_icon__sUHUn"><path d="M11 0C4.93 0 0 4.93 0 11v7c0 1.65 1.35 3 3 3h4v-9H2v-1c0-4.96 4.04-9 9-9s9 4.04 9 9v1h-5v9h4c1.65 0 3-1.35 3-3v-7c0-6.07-4.93-11-11-11zM5 14v5H3c-.55 0-1-.45-1-1v-4h3zm15 4c0 .55-.45 1-1 1h-2v-5h3v4z" fill="currentColor"></path></svg>
+                            </span>
+                            <div class="tabName">
+                                Audiobooks
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <svg width="19" height="23" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="SvgIcon-module_icon__sUHUn"><path d="M13 14H5v-2h8v2zM5 18h6v-2H5v2z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0v20a3 3 0 003 3h16V6.586L12.414 0H0zm2 20V2h8v7h7v12H3a1 1 0 01-1-1zM16.586 7L12 2.414V7h4.586z" fill="currentColor"></path></svg>
+                            </span>
+                            <div class="tabName">
+                                Documents
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
