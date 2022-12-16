@@ -2,6 +2,7 @@
 
 
 
+
 let showProfile = document.querySelector(".profile-info-container");
 let showProfileInfo = () => {
     if(showProfile.style.display == "block") showProfile.style.display = "none"

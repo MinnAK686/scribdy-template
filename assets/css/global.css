@@ -1,4 +1,9 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -11289,6 +11294,109 @@ textarea.form-control-lg {
 }
 main section {
   width: 95%;
+  margin: 3rem auto;
+}
+main #best-selling .sect-container .card-item {
+  --accent-background-height: 153px;
+  --article-image-height: 131px;
+  --article-metadata-height: 179px;
+  --cell-width: 190px;
+  --detail-padding-bottom: 12px;
+  --detail-padding-left: 16px;
+  --detail-padding-right: 12px;
+  --metadata-max-height: calc(101px + 52px);
+  --metadata-margin-top: 56px;
+  --metadata-padding: 16px;
+  --thumbnail-margin-top: 24px;
+  border: 1px solid #e3e6ef;
+  cursor: pointer;
+  display: grid;
+  grid-template-rows: auto minmax(auto, var(--metadata-max-height)) auto;
+  outline: none;
+  outline-offset: -2px;
+  position: relative;
+  width: var(--cell-width);
+}
+main #best-selling .sect-container .card-item .card-item-title {
+  transition: opacity 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  left: -1px;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  width: unset;
+  height: unset;
+  opacity: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+main #best-selling .sect-container .card-item .card-item-title span {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+}
+main #best-selling .sect-container .card-item .card-item-header {
+  background-color: #e1eaec;
+  display: flex;
+  height: var(--accent-background-height);
+  justify-content: center;
+  left: -1px;
+  position: relative;
+  top: -1px;
+  width: calc(var(--cell-width) + 2px);
+}
+main #best-selling .sect-container .card-item .card-item-header span .card-item-img-controller {
+  height: var(--thumbnail-small-height);
+  width: var(--thumbnail-small-width);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  --thumbnail-large-height: 283px;
+  --thumbnail-large-width: 214px;
+  --thumbnail-medium-height: 232px;
+  --thumbnail-medium-width: 175px;
+  --thumbnail-small-height: 174px;
+  --thumbnail-small-width: 132px;
+  --thumbnail-xsmall-height: 144px;
+  --thumbnail-xsmall-width: 108px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  margin-top: 24px;
+}
+main #best-selling .sect-container .card-item .card-item-header span .card-item-img-controller .card-item-img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  visibility: visible;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+main #best-selling .sect-container .card-item .card-item-body {
+  margin-top: var(--metadata-margin-top);
+  max-width: calc(var(--cell-width) - var(--metadata-padding) * 2);
+  padding: 0 var(--metadata-padding);
+}
+main #best-selling .sect-container .card-item .card-item-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: calc(var(--cell-width) - var(--detail-padding-left) - var(--detail-padding-right));
+  padding: 0 var(--detail-padding-right) var(--detail-padding-bottom) var(--detail-padding-left);
+}
+main #best-selling .sect-container .card-item .card-item-footer .card-item-rating span i {
+  margin-right: 0.2rem;
+}
+main #best-selling .sect-container .card-item .card-item-footer .save-to-bookmark i {
+  color: #6c757d;
+  margin-left: 1.5rem;
 }
 
 .wrapper__megamenu_top_bar .search_input_container {
