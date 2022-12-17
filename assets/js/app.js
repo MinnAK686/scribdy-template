@@ -1,8 +1,5 @@
 "use strict";
 
-
-
-
 let showProfile = document.querySelector(".profile-info-container");
 let showProfileInfo = () => {
     if(showProfile.style.display == "block") showProfile.style.display = "none"
@@ -11,7 +8,6 @@ let showProfileInfo = () => {
 
 
 let backuser = document.querySelector(".back-user");
-backuser.style.display = "none"
 let toggleOffcanvas = document.querySelector(".toggleOffcanvas");
 let offcanvasToggler = document.querySelector(".offcanvas-toggler");
 let showMobileProfile = document.querySelector(".mobile-profile-info-container")
