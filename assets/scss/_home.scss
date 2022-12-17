@@ -167,6 +167,7 @@
         width: 100%;
         height: 100%;
         border-radius: 100%;
+        object-fit: cover;
     }
 
     .profile-info-container {
@@ -214,6 +215,7 @@
             width: 2.5rem;
             height: 2.5rem;
             border-radius: 50%;
+            object-fit: cover;
         }
     }
     .user-name {
@@ -302,7 +304,7 @@ main {
         margin: 3rem auto;
     }
 
-    #best-selling {
+    section {
         .sect-container {
             .card-item {
                 --accent-background-height: 153px;
