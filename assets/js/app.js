@@ -9,9 +9,6 @@ let showProfileInfo = () => {
     else showProfile.style.display = "block"
 }
 
-document.querySelector("body").addEventListener("click", () => {
-    showProfileInfo.style.display = "none !important"
-})
 
 let backuser = document.querySelector(".back-user");
 backuser.style.display = "none"
