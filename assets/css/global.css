@@ -11592,4 +11592,32 @@ form {
   padding: 0 6px;
 }
 
+.thumbnail-img-container {
+  height: 205px;
+  height: 275px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(180deg, #e1eaec 75%, #f9faff 25%);
+}
+.thumbnail-img-container .thumbnail-img-wrapper {
+  height: 232px;
+  width: 175px;
+  margin-top: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.thumbnail-img-container .thumbnail-img-wrapper div img {
+  width: 100%;
+  height: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  visibility: visible;
+  border: none;
+}
+
 /*# sourceMappingURL=global.css.map */
